@@ -1,0 +1,31 @@
+ticker,company_name,sector,subsector,market_cap_category,is_shariah_compliant
+1155.KL,Malayan Banking Berhad (Maybank),Financials,Banking,Large Cap,No
+1023.KL,CIMB Group Holdings Berhad,Financials,Banking,Large Cap,No
+1295.KL,Public Bank Berhad,Financials,Banking,Large Cap,No
+5183.KL,Petronas Chemicals Group Berhad,Energy,Chemicals,Large Cap,Yes
+6888.KL,Axiata Group Berhad,Communications,Telecommunications,Large Cap,Yes
+6012.KL,Maxis Berhad,Communications,Telecommunications,Large Cap,No
+4863.KL,Telekom Malaysia Berhad,Communications,Telecommunications,Large Cap,Yes
+5347.KL,Tenaga Nasional Berhad,Utilities,Electric Utilities,Large Cap,Yes
+1082.KL,Hong Leong Bank Berhad,Financials,Banking,Large Cap,No
+5819.KL,Hong Leong Financial Group Berhad,Financials,Diversified Financial,Large Cap,No
+4197.KL,Sime Darby Plantation Berhad,Consumer Staples,Plantation,Large Cap,Yes
+2291.KL,Nestle (Malaysia) Berhad,Consumer Staples,Food & Beverage,Large Cap,No
+4065.KL,PPB Group Berhad,Consumer Staples,Diversified,Large Cap,No
+3816.KL,MISC Berhad,Industrials,Shipping,Large Cap,Yes
+3182.KL,Genting Berhad,Consumer Discretionary,Gaming & Resorts,Large Cap,No
+4715.KL,Genting Malaysia Berhad,Consumer Discretionary,Gaming & Resorts,Large Cap,No
+1961.KL,IOI Corporation Berhad,Consumer Staples,Plantation,Large Cap,Yes
+2445.KL,Kuala Lumpur Kepong Berhad,Consumer Staples,Plantation,Large Cap,Yes
+5285.KL,Sunway Berhad,Industrials,Property & Construction,Large Cap,Yes
+1066.KL,RHB Bank Berhad,Financials,Banking,Large Cap,Yes
+5168.KL,Hartalega Holdings Berhad,Healthcare,Medical Devices,Large Cap,Yes
+7277.KL,Dialog Group Berhad,Energy,Oil & Gas Services,Large Cap,Yes
+5299.KL,IHH Healthcare Berhad,Healthcare,Hospital Services,Large Cap,No
+6033.KL,KLCC Property Holdings Berhad,Real Estate,REIT,Large Cap,Yes
+4588.KL,UMW Holdings Berhad,Consumer Discretionary,Automotive,Large Cap,Yes
+3026.KL,British American Tobacco Malaysia,Consumer Staples,Tobacco,Large Cap,No
+5008.KL,Sime Darby Berhad,Industrials,Diversified,Large Cap,Yes
+4308.KL,Sapura Energy Berhad,Energy,Oil & Gas Services,Mid Cap,Yes
+5681.KL,Petronas Dagangan Berhad,Energy,Fuel Distribution,Large Cap,Yes
+6947.KL,Mr DIY Group (M) Berhad,Consumer Discretionary,Retail,Large Cap,Yes
