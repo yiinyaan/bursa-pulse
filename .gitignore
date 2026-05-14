@@ -1,0 +1,13 @@
+# GCP credentials - never commit
+*.json
+keys/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Bruin local
+.bruin/
