@@ -3,4 +3,17 @@ type: bq.seed
 connection: bigquery_default
 parameters:
     path: ../seeds/klci_components.csv
-    column_validation: false
+
+columns:
+    - name: ticker
+      type: STRING
+    - name: company_name
+      type: STRING
+    - name: sector
+      type: STRING
+    - name: subsector
+      type: STRING
+    - name: market_cap_category
+      type: STRING
+    - name: is_shariah_compliant
+      type: STRING
