@@ -1,28 +1,6 @@
 name: seeds.klci_components
 type: bq.seed
 connection: bigquery_default
-
 parameters:
-  path: ../seeds/klci_components.csv
-
-secrets:
-  - key: bigquery_default
-    inject_as: bigquery_default
-
-columns:
-  - name: ticker
-    type: STRING
-  - name: company_name
-    type: STRING
-  - name: sector
-    type: STRING
-  - name: subsector
-    type: STRING
-  - name: market_cap_category
-    type: STRING
-  - name: is_shariah_compliant
-    type: STRING
-  - name: _dlt_load_id
-    type: STRING
-  - name: _dlt_id
-    type: STRING
+    path: ../seeds/klci_components.csv
+    column_validation: false
