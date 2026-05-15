@@ -11,3 +11,5 @@ venv/
 
 # Bruin local
 .bruin/
+
+.bruin.yml
