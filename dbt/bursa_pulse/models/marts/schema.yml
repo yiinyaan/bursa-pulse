@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_companies
+    description: Dimension table for KLCI component companies.
+    columns:
+      - name: company_key
+        description: Surrogate key
+        data_tests:
+          - not_null
+          - unique
+      - name: ticker
+        description: Yahoo Finance ticker symbol
+        data_tests:
+          - not_null
+          - unique
+      - name: company_name
+        description: Full company name
+        data_tests:
+          - not_null
+      - name: sector
+        description: GICS sector
+        data_tests:
+          - not_null
+
+  - name: fact_daily_prices
+    description: Core fact table joining stock prices with company and FX data.
+    columns:
+      - name: ticker
+        description: Stock ticker
+        data_tests:
+          - not_null
+      - name: trade_date
+        description: Trading date
+        data_tests:
+          - not_null
+      - name: company_name
+        description: Company name
+        data_tests:
+          - not_null
+      - name: close_price
+        description: Closing price MYR
+        data_tests:
+          - not_null

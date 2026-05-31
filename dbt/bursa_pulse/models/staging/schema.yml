@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: stg_stock_prices
+    description: Cleaned stock price data with daily return and price range calculations.
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: trade_date
+        data_tests:
+          - not_null
+      - name: open_price
+        data_tests:
+          - not_null
+      - name: close_price
+        data_tests:
+          - not_null
+      - name: volume
+        data_tests:
+          - not_null
+
+  - name: stg_exchange_rates
+    description: Cleaned exchange rates with derived USD/MYR cross rate.
+    columns:
+      - name: rate_date
+        data_tests:
+          - not_null
+      - name: target_currency
+        data_tests:
+          - not_null
+      - name: rate
+        data_tests:
+          - not_null
+
+  - name: stg_klci_components
+    description: Reference table for KLCI 30 component stocks.
+    columns:
+      - name: ticker
+        data_tests:
+          - not_null
+          - unique
+      - name: company_name
+        data_tests:
+          - not_null
+      - name: sector
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                - Financials
+                - Energy
+                - Communications
+                - Utilities
+                - Consumer Staples
+                - Consumer Discretionary
+                - Healthcare
+                - Real Estate
+                - Industrials

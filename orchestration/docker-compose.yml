@@ -1,0 +1,11 @@
+services:
+  kestra:
+    image: kestra/kestra:latest
+    pull_policy: always
+    user: "root"
+    command: server local
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/user:/home/user
+    ports:
+      - "8080:8080"

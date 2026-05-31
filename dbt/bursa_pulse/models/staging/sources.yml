@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: hale-mantra-431702-u3
+    schema: raw
+    tables:
+      - name: stock_prices
+      - name: exchange_rates
+
+  - name: seeds
+    database: hale-mantra-431702-u3
+    schema: seeds
+    tables:
+      - name: klci_components

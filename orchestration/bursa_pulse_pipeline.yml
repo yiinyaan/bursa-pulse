@@ -1,0 +1,22 @@
+id: bursa_pulse_pipeline
+namespace: bursa.pulse
+
+description: "Bursa Pulse daily pipeline - runs dbt transformations after market close"
+
+triggers:
+  - id: daily_schedule
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "0 10 * * 1-5"
+
+tasks:
+  - id: dbt_run
+    type: io.kestra.plugin.scripts.shell.Commands
+    taskRunner:
+      type: io.kestra.plugin.core.runner.Process
+    commands:
+      - /home/user/bruin/bursa-pulse/dbt-env/bin/dbt run --project-dir /home/user/bruin/bursa-pulse/dbt/bursa_pulse --profiles-dir /home/user/.dbt
+      - /home/user/bruin/bursa-pulse/dbt-env/bin/dbt test --project-dir /home/user/bruin/bursa-pulse/dbt/bursa_pulse --profiles-dir /home/user/.dbt
+
+  - id: notify_success
+    type: io.kestra.plugin.core.log.Log
+    message: "Bursa Pulse pipeline completed successfully"

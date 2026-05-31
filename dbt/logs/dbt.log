@@ -1,0 +1,69 @@
+[0m07:22:09.577933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7055b02cb510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7055ad221c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7055ad333e50>]}
+
+
+============================== 07:22:09.581221 | 43e19022-72c2-42dc-886d-1494cc018ab6 ==============================
+[0m07:22:09.581221 [info ] [MainThread]: Running with dbt=1.11.11
+[0m07:22:09.581948 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'fail_fast': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init bursa_pulse', 'empty': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'version_check': 'True', 'log_format': 'default', 'warn_error': 'None', 'debug': 'False', 'printer_width': '80', 'quiet': 'False', 'introspect': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/user/.dbt', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m07:22:09.592408 [info ] [MainThread]: Creating dbt configuration folder at /home/user/.dbt
+[0m07:22:09.595173 [debug] [MainThread]: Starter project path: /home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m07:22:09.599188 [info ] [MainThread]: 
+Your new dbt project "bursa_pulse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:22:09.599829 [info ] [MainThread]: Setting up your profile.
+[0m07:22:18.822960 [error] [MainThread]: Encountered an error:
+
+[0m07:22:18.830795 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/cli/main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/dbt/task/init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/click/termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/bruin/bursa-pulse/dbt-env/lib/python3.11/site-packages/click/termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m07:22:18.834389 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 9.325894, "process_in_blocks": "0", "process_kernel_time": 0.267097, "process_mem_max_rss": "106948", "process_out_blocks": "72", "process_user_time": 1.343461}
+[0m07:22:18.836006 [debug] [MainThread]: Command `dbt init` failed at 07:22:18.835680 after 9.33 seconds
+[0m07:22:18.837384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7055b1adb690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7055ad580250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7055ad24f6d0>]}
+[0m07:22:18.838743 [debug] [MainThread]: Flushing usage events
+[0m07:22:20.462763 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:22:28.611723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755798717910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755795d7cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7557955d6090>]}
+
+
+============================== 07:22:28.616361 | 3f8fa0f3-c87a-4f6f-804b-ce3743221614 ==============================
+[0m07:22:28.616361 [info ] [MainThread]: Running with dbt=1.11.11
+[0m07:22:28.617612 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'profiles_dir': '/home/user/.dbt', 'partial_parse': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'printer_width': '80', 'empty': 'None', 'use_experimental_parser': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'version_check': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'invocation_command': 'dbt init bursa_pulse', 'static_parser': 'True', 'write_json': 'True', 'no_print': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'warn_error': 'None'}
+[0m07:22:28.628774 [info ] [MainThread]: A project called bursa_pulse already exists here.
+[0m07:22:28.630314 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.07202003, "process_in_blocks": "0", "process_kernel_time": 0.151365, "process_mem_max_rss": "106848", "process_out_blocks": "8", "process_user_time": 1.234824}
+[0m07:22:28.630820 [debug] [MainThread]: Command `dbt init` succeeded at 07:22:28.630718 after 0.07 seconds
+[0m07:22:28.631141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755799ef4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7557956f12d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755799de0310>]}
+[0m07:22:28.631531 [debug] [MainThread]: Flushing usage events
+[0m07:22:29.792579 [debug] [MainThread]: An error was encountered while trying to flush usage events

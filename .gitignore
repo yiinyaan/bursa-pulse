@@ -1,5 +1,6 @@
 # GCP credentials - never commit
-*.json
+terraform/service-account.json
+terraform/terraform.tfvars
 keys/
 .env
 
@@ -8,8 +9,20 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+dbt-env/
 
 # Bruin local
-.bruin/
-
 .bruin.yml
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+
+# dbt
+dbt/bursa_pulse/target/
+dbt/bursa_pulse/logs/
+
+# Orchestration logs
+orchestration/pipeline.log
