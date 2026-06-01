@@ -94,7 +94,7 @@ Two layers of automated quality checks across the entire pipeline.
 
 ## Dashboard
 
-[Malaysia Market Intelligence Dashboard](#) ← replace with Looker Studio link
+[Malaysia Market Intelligence Dashboard](https://datastudio.google.com/reporting/f2df3a1e-7b20-47c2-8961-655b536d1d76)
 
 ![Dashboard](images/dashboard.png)
 
